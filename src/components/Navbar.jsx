@@ -11,7 +11,7 @@ const Navbar = () => {
          
           />
         </div>
-        <div className="navbar-container-menu">{<GiHamburgerMenu />}</div>
+        <div className="navbar-container-menu">{<GiHamburgerMenu/>}</div>
       </nav>
     </div>
   );
