@@ -1,5 +1,6 @@
 :root {
     --Background: #0f0e17;
+    --BackgroundCard: #1f1d30 ;
     --Headline: #fffffe;
     --Paragraph: #a7a9be;
     --Button: #ff8906;
@@ -11,6 +12,9 @@
     --Tertiary: #e53170;
 }
 
+body{
+    background-color: var(--BackgroundCard);
+}
 .listContainer {
     display: flex;
     justify-content: center;
@@ -26,12 +30,19 @@
     height: min-content;
     gap: 5px;
     margin: 10px;
-    border: 1px solid var(--Stroke);
     border-radius: 3px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: var(--Background)
+    background-color: var(--Background);
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: rgba(238, 36, 36, 0.4) 0px 0px 0px 2px, rgba(187, 116, 35, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.bookCardContainer:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(238, 36, 36, 0.4) 0px 0px 0px 2px, rgba(187, 116, 35, 0.95) 0px 4px 106px 5px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 .bookImg {
     width: 220px;
