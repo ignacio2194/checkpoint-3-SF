@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from "react-redux"
+import '../styles/BookCard.css'
 
 
 function BookCard() {
@@ -9,13 +10,13 @@ function BookCard() {
     console.log('books in book', books)
     console.log('state in book', state)
   return (
-    <div>
+    <div className='listContainer'>
         {books.map((book) => {
         return (
-            <div key={book.id}>
-                <img src={book.image}/>
-                <h1>{book.title}</h1>
-                <h3>{book.author}</h3>
+            <div className='bookCardContainer' key={book.id}>
+                <img className='bookImg' src={book.imageLink}/>
+                <h3 className='bookTitle'>{book.title}</h3>
+                <h5 className='bookAuthor'>{book.author}</h5>
             </div>
         )
     })}

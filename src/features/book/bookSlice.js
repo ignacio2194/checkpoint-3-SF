@@ -1,16 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit'
+import dataBooks from '../../assets/dataBooks.json'
 
-const initialState = [
-    {
-        id: "1", 
-        title: "Book Title",
-        author: "Author",
-        year: "year publish",
-        image: "https://cdn-icons-png.flaticon.com/512/3104/3104388.png",
-        description:"Bla bla bla",
-        isbn: "ISBN"
-    },
-]
+/* const getApi = async () => {
+    const data = await fetch('https://github.com/benoitvallon/100-best-books/blob/master/books.json')
+    console.log(data);  
+} */
+
+const initialState = dataBooks
 
 export const bookSlice = createSlice({
     name: 'book',

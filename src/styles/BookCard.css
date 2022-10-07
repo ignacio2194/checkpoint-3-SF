@@ -1,0 +1,49 @@
+:root {
+    --Background: #0f0e17;
+    --Headline: #fffffe;
+    --Paragraph: #a7a9be;
+    --Button: #ff8906;
+    --ButtonText: #fffffe;
+    --Stroke: black;
+    --Main: #fffffe;
+    --Highlight: #ff8906;
+    --Secondary: #f25f4c;
+    --Tertiary: #e53170;
+}
+
+.listContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bookCardContainer {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: min-content;
+    gap: 5px;
+    margin: 10px;
+    border: 1px solid var(--Stroke);
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--Background)
+}
+.bookImg {
+    width: 220px;
+    height: 292px;
+}
+.bookTitle {
+    margin: 10px 5px;
+    height: auto;
+    color: var(--Headline);
+    justify-content: center;
+}
+.bookAuthor {
+    margin: 15px 5px;
+    color: var(--Paragraph);
+}
