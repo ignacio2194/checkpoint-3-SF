@@ -1,10 +1,13 @@
-import BookCard from "./components/BookCard";
+import BookPreview from "./components/BookPreview";
+
+//---------SOLO PARA PRUEBA
+import BookDetails from './components/BookDetails'
 
 
 function App() {
   return (
     <div className="App">
-     <BookCard />
+     <BookDetails />
     </div>
   );
 }

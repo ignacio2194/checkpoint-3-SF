@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { useSelector } from "react-redux"
-import '../styles/BookCard.css'
+import '../styles/BookPreview.css'
 
 
-function BookCard() {
+function BookPreview() {
     const [details, setDetails] = useState(false)
 
     const state = useSelector((state) => state)
@@ -40,4 +40,4 @@ function BookCard() {
   )
 }
 
-export default BookCard
+export default BookPreview

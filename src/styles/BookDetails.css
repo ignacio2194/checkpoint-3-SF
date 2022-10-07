@@ -1,0 +1,84 @@
+:root {
+    --Background: #0f0e17;
+    --BackgroundCard: #1f1d30 ;
+    --Headline: #fffffe;
+    --Paragraph: #a7a9be;
+    --Button: #ff8906;
+    --ButtonText: #fffffe;
+    --Stroke: black;
+    --Main: #fffffe;
+    --Highlight: #ff8906;
+    --Secondary: #f25f4c;
+    --Tertiary: #e53170;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--Background);
+}
+.bookDetailCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    border: 1px solid var(--Highlight);
+    border-radius: 3px;
+    padding: 10px;
+    background-color: var(--BackgroundCard);
+    gap: 15px
+}
+.bookDetail {
+    display: flex;
+    flex-direction: column;
+}
+.bookDetailBody {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.bookDetailFooter {
+    display: flex;
+    margin: 10px;
+    gap: 150px;
+    width: 600px;
+    color: var(--Paragraph)
+}
+.bookAuthor {
+    width: 600px;
+}
+.bookImg {
+    width: auto;
+    height: auto;
+}
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+.btnUpdate {
+    border: 1px solid var(--Highlight);
+    border-radius: 3px;
+    margin: 0 100px;
+    padding: 5px 15px;
+    color: var(--ButtonText);
+    font-weight: 600;
+    background-color: var(--Button);
+    transition: 0.3s;
+}
+.btnDelete {
+    border: 1px solid var(--Highlight);
+    border-radius: 3px;
+    margin: 0 100px;
+    padding: 5px 15px;
+    color: var(--ButtonText);
+    font-weight: 600;
+    background-color: var(--Button);
+    transition: 0.3s;
+}
+.btnUpdate:hover {
+    background-color: var(--Secondary);
+}
+.btnDelete:hover {
+    background-color: var(--Tertiary);
+}
