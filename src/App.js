@@ -1,10 +1,37 @@
 import BookCard from "./components/BookCard";
+import { Routes, Route } from 'react-router-dom';
+import UserRegister from "./components/UserRegister";
 
 
 function App() {
   return (
     <div className="App">
-     <BookCard />
+      <Routes>
+        <Route
+          path="/home"
+          // element={<BookList />}
+        />
+        <Route
+          path="/:id"
+          // element={<BookDetail />}
+        />
+        <Route
+          path="/createform"
+          // element={<CreateForm />}
+        />
+        <Route
+          path="/updateform"
+          // element={<UpdateForm />}
+        />
+        <Route
+          path="/register"
+          element={<UserRegister />}
+        />
+        <Route
+          path="/login"
+          // element={<UserLogin />}
+        />
+      </Routes>
     </div>
   );
 }
