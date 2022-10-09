@@ -16,45 +16,36 @@ body{
     background-color: var(--Background);
 }
 .listContainer {
+    padding: 50px 0;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    gap: 25px;
     flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
 }
-.bookCardContainer {
-    display: flex;
-    flex-direction: column;
-    width: 220px;
-    height: min-content;
-    gap: 5px;
-    margin: 10px;
-    border-radius: 3px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.previewCardContainer {
     background-color: var(--BackgroundCard);
     overflow: hidden;
     cursor: pointer;
+    padding: 5px;
     transition: 0.3s;
     box-shadow: rgba(238, 36, 36, 0.4) 0px 0px 0px 2px, rgba(187, 116, 35, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
-.bookCardContainer:hover {
+.previewCardContainer:hover {
     transform: scale(1.1);
     box-shadow: rgba(238, 36, 36, 0.4) 0px 0px 0px 2px, rgba(187, 116, 35, 0.65) 0px 4px 16px 5px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
-.bookImg {
-    width: 220px;
-    height: 292px;
+.previewImg {
+    width: 250px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.bookTitle {
-    margin: 10px 5px;
-    height: auto;
+.previewTitle {
+    width: 250px;
+    text-align: center;
     color: var(--Headline);
-    justify-content: center;
 }
-.bookAuthor {
-    margin: 15px 5px;
+.previewAuthor {
+    text-align: center;
     color: var(--Paragraph);
 }

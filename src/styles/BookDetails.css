@@ -13,16 +13,11 @@
 }
 .container {
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
     background-color: var(--Background);
 }
 .bookDetailCard {
     display: flex;
-    align-items: center;
-    margin-right: auto;
-    margin-left: auto;
     margin-top: 100px;
     border: 1px solid var(--Highlight);
     border-radius: 3px;
@@ -34,11 +29,13 @@
 .bookDetail {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 .bookDetailBody {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    gap: 3px;
+    align-self: flex-start;
+    margin: 0 10px;
+    color: var(--Paragraph);
 }
 .bookDetailFooter {
     display: flex;
@@ -48,7 +45,13 @@
     color: var(--Paragraph)
 }
 .bookAuthor {
+    text-align: left;
     width: 500px;
+    color: var(--Paragraph);
+}
+.bookTitle {
+    text-align: left;
+    color: var(--Headline);
 }
 .bookImg {
     width: auto;
@@ -89,21 +92,26 @@
 
 /*-----------------------------TABLET-----------------------------*/
 @media (max-width: 880px) {
+    .bookDetail {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
     .bookDetailBody {
         display: flex;
         flex-direction: column;
-        gap: 3px;
     }
     .bookDetailFooter {
         display: flex;
-        margin: 10px;
+        margin: 0 10px;
         gap: 30px;
         width: 300px;
         color: var(--Paragraph)
     }
     .bookAuthor {
-        width: 300px;
-        margin: 10px;
+        text-align: left;
+        width: 320px;
+        margin: 12px 0;
     }
     .btnUpdate {
         border: 1px solid var(--Highlight);
@@ -126,6 +134,7 @@
         transition: 0.3s;
     }  
 }
+/*-----------------------------SMARTPHONE-----------------------------*/
 @media (max-width: 690px) {
     .bookDetailCard {
         display: flex;
@@ -133,7 +142,8 @@
         align-items: center;
         margin-right: auto;
         margin-left: auto;
-        margin-top: 100px;
+        margin-top: 50px;
+        margin-bottom: 50px;
         border: 1px solid var(--Highlight);
         border-radius: 3px;
         padding: 10px;
@@ -150,8 +160,12 @@
         width: 250px;
     }
     .bookAuthor {
+        text-align: center;
         width: 250px;
         margin: 6px;
+    }
+    .bookTitle {
+        text-align: center;
     }
     .btnUpdate {
         margin: 10px 30px;
