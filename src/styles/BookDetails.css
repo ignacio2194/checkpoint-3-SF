@@ -1,6 +1,6 @@
 :root {
     --Background: #0f0e17;
-    --BackgroundCard: #1f1d30 ;
+    --BackgroundCard: #17171c ;
     --Headline: #fffffe;
     --Paragraph: #a7a9be;
     --Button: #ff8906;
@@ -21,13 +21,15 @@
 .bookDetailCard {
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 100px;
     border: 1px solid var(--Highlight);
     border-radius: 3px;
     padding: 10px;
     background-color: var(--BackgroundCard);
-    gap: 15px
+    gap: 15px;
+    box-shadow: rgba(238, 120, 36, 0.4) 0px 0px 0px 2px, rgba(187, 116, 35, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 .bookDetail {
     display: flex;
@@ -41,12 +43,12 @@
 .bookDetailFooter {
     display: flex;
     margin: 10px;
-    gap: 150px;
-    width: 600px;
+    gap: 130px;
+    width: 500px;
     color: var(--Paragraph)
 }
 .bookAuthor {
-    width: 600px;
+    width: 500px;
 }
 .bookImg {
     width: auto;
@@ -59,7 +61,7 @@
 .btnUpdate {
     border: 1px solid var(--Highlight);
     border-radius: 3px;
-    margin: 0 100px;
+    margin: 10px 100px;
     padding: 5px 15px;
     color: var(--ButtonText);
     font-weight: 600;
@@ -69,7 +71,7 @@
 .btnDelete {
     border: 1px solid var(--Highlight);
     border-radius: 3px;
-    margin: 0 100px;
+    margin: 10px 100px;
     padding: 5px 15px;
     color: var(--ButtonText);
     font-weight: 600;
@@ -78,7 +80,83 @@
 }
 .btnUpdate:hover {
     background-color: var(--Secondary);
+    cursor: pointer;
 }
 .btnDelete:hover {
     background-color: var(--Tertiary);
+    cursor: pointer;
+}
+
+/*-----------------------------TABLET-----------------------------*/
+@media (max-width: 880px) {
+    .bookDetailBody {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+    .bookDetailFooter {
+        display: flex;
+        margin: 10px;
+        gap: 30px;
+        width: 300px;
+        color: var(--Paragraph)
+    }
+    .bookAuthor {
+        width: 300px;
+        margin: 10px;
+    }
+    .btnUpdate {
+        border: 1px solid var(--Highlight);
+        border-radius: 3px;
+        margin: 10px 50px;
+        padding: 5px 15px;
+        color: var(--ButtonText);
+        font-weight: 600;
+        background-color: var(--Button);
+        transition: 0.3s;
+    }
+    .btnDelete {
+        border: 1px solid var(--Highlight);
+        border-radius: 3px;
+        margin: 10px 50px;
+        padding: 5px 15px;
+        color: var(--ButtonText);
+        font-weight: 600;
+        background-color: var(--Button);
+        transition: 0.3s;
+    }  
+}
+@media (max-width: 690px) {
+    .bookDetailCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 100px;
+        border: 1px solid var(--Highlight);
+        border-radius: 3px;
+        padding: 10px;
+        background-color: var(--BackgroundCard);
+        gap: 15px;
+        box-shadow: rgba(238, 120, 36, 0.4) 0px 0px 0px 2px, rgba(187, 116, 35, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+    .bookDetailBody {
+        display: flex;
+        flex-direction: column;
+    }
+    .bookDetailFooter {
+        gap: 10px;
+        width: 250px;
+    }
+    .bookAuthor {
+        width: 250px;
+        margin: 6px;
+    }
+    .btnUpdate {
+        margin: 10px 30px;
+    }
+    .btnDelete {
+        margin: 10px 30px;
+    } 
 }
