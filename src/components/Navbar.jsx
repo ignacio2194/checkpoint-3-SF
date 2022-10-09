@@ -1,53 +1,28 @@
-import { logDOM } from "@testing-library/react";
+
 import React from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
+
 import logo from "../assets/bookstorelogo.png";
 const Navbar = () => {
   return (
     <div className="navbar  ">
-      <nav className="navbar navbar-expand-lg container-fluid ">
+      <nav className="navbar navbar-expand-lg  navbar-dark  w-100">
         <div className="container-fluid">
-          <div className="image_logo">
-          <img src={logo} width="130" height="100"></img>
-          </div>
-       <div>
-       <button
-            className="navbar-toggler ms-10"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-             <span className="navbar-toggler-icon"></span>
-          </button> 
-       </div>
-          
-          
-          <div className="collapse " id="navbarNav">
-            <ul className="navbar-nav navbar-collapse">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Features
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Pricing
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-          </div>
+          <img src={logo} width="130"></img>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    {/* elements of colapse menu*/}
+    <div className="collapse navbar-collapse  " id="menu">
+    <ul className="navbar-nav  navbar-light ms-auto text-light">
+      <li className="nav-item ms-auto m-2">Create</li>
+      <li className="nav-item ms-auto m-2">Update</li>
+      <li className="nav-item ms-auto m-2">Delete</li>
+      <li className="nav-item ms-auto m-2">Login</li>
+      <li className="nav-item ms-auto m-2">Register</li>
+    </ul>
+    </div>
         </div>
+       
       </nav>
     </div>
   );
