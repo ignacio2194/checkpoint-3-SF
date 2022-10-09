@@ -35,7 +35,7 @@ const CreateForm = () => {
         }else{
             dispatch(addBook({
                 ...book,
-                id: uuid()
+                ISBN: uuid()
             }))
 
         }
@@ -49,31 +49,32 @@ const CreateForm = () => {
     }, [])
 
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
+        <div className='formContainer'>
+            <form className='form' onSubmit={handleSubmit}>
 
-                <h1>Create Book</h1>
+                <h1 className='title'>Create Book</h1>
+                <label  className="form-label">Title</label>
                 <div className="mb-3">
                     <input
                         type="text"
                         className="form-control"
-                        placeholder="Title"
                         name='title'
                         onChange={handleChange}
                         value={book.title}
                     />
                 </div>
+                <label  className="form-label">Author</label>
+
                 <div className="mb-3">
                     <input
                         type="text"
                         className="form-control"
-                        placeholder="Author"
                         name='author'
                         onChange={handleChange}
                         value={book.author}
                     />
                 </div>
-                <label for="exampleFormControlTextarea1" className="form-label">Date of Publication: </label>
+                <label  className="form-label">Date of Publication</label>
                 <div className="mb-3">
                     <input
                         type="date"
@@ -83,33 +84,23 @@ const CreateForm = () => {
                         value={book.date}
                     />
                 </div>
+                <label  className="form-label">Image</label>
                 <div className="mb-3">
                     <input
                         type="text"
                         className="form-control"
-                        placeholder="image"
                         name='image'
                         onChange={handleChange}
                         value={book.image}
                     />
                 </div>
+                <label  className="form-label">Description</label>
                 <div className="mb-3">
                     <textarea
                         className="form-control"
-                        placeholder="Description"
                         name='description'
                         onChange={handleChange}
                         value={book.description}
-                    />
-                </div>
-                <div className="mb-3">
-                    <input
-                        type="text"
-                        className="form-control"
-                        placeholder="ISBN"
-                        name='ISBN'
-                        onChange={handleChange}
-                        value={book.ISBN}
                     />
                 </div>
                 <button type="submit" className="btn btn-primary">Create</button>
