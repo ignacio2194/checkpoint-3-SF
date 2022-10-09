@@ -1,7 +1,7 @@
 import '../styles/CreateForm.css'
 import { useState , useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import {addBook} from '../features/book/bookSlice'
+import {addBook,editBook} from '../features/book/bookSlice'
 import { v4 as uuid } from 'uuid';
 import { useNavigate, useParams } from 'react-router-dom';
 
@@ -31,7 +31,7 @@ const CreateForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         if (params.id) {
-            dispatch()
+            dispatch(editBook(book))
         }else{
             dispatch(addBook({
                 ...book,
