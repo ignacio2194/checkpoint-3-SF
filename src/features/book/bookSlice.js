@@ -11,7 +11,23 @@ const initialState = dataBooks
 export const bookSlice = createSlice({
     name: 'book',
     initialState,
-    reducers: {}
+    reducers: {
+        addBook: (state, action) => {
+            state.push(action.payload)
+        },
+        editBook: (state, action) => {
+            const {id,title,author,date,image,description,ISBN} = action.payload;
+            const foundBook = state.find(book => book.id === id)
+            if (foundBook) {
+                foundBook.title = title;
+                foundBook.author = author;
+                foundBook.date = date;
+                foundBook.image = image;
+                foundBook.description = description;
+                foundBook.ISBN = ISBN
+            }
+        }
+    }
 })
-// export const {  } = bookSlice.actions
+export const { addBook , editBook } = bookSlice.actions
 export default bookSlice.reducer
