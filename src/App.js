@@ -1,6 +1,7 @@
-import BookCard from "./components/BookCard";
 import { Routes, Route } from 'react-router-dom';
 import CreateForm from "./components/CreateForm";
+import BookPreview from '../src/components/BookPreview'
+
 function App() {
   return (
     <div className="App">
@@ -9,7 +10,7 @@ function App() {
       <Routes>
         <Route
           path="/home"
-          element={<BookCard />}
+          element={<BookPreview />}
         />
         <Route
           path="/:id"
