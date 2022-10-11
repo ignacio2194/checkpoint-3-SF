@@ -3,11 +3,12 @@ import BookDetail from './components/BookDetails'
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import CreateForm from "./components/CreateForm";
+import Navbar from "./components/Navbar"
 function App() {
   return (
     <div className="App">
 
-      {/* Navbar here */}
+      <Navbar/>
       <Routes>
         <Route
           path="/home"
