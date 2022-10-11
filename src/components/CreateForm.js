@@ -20,7 +20,7 @@ const CreateForm = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const params = useParams();
-    const books = useSelector(state => state.book)
+    const books = useSelector((state) => state.book)
 
     const handleChange = (e) => {
         setBook({
@@ -45,7 +45,7 @@ const CreateForm = () => {
 
     useEffect(() => {
         if(params.id) {
-            setBook(books.find((book) => book.id === params.id))
+            setBook(books.find((book) => book.ISBN === params.id))
         }
     }, [])
 
