@@ -1,6 +1,6 @@
 import '../styles/CreateForm.css'
-
-import React,{ useState , useEffect} from 'react'
+import React from "react";
+import { useState , useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import {addBook,editBook} from '../features/book/bookSlice'
 import { v4 as uuid } from 'uuid';
@@ -50,7 +50,7 @@ const CreateForm = () => {
     }, [])
 
     return (
-        <div className='formContainer'>
+        <div className='d-flex justify-content-center w-100'>
             <form className='form' onSubmit={handleSubmit}>
 
                 <h1 className='title'>Create Book</h1>
