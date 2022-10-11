@@ -9,10 +9,10 @@ function BookDetails() {
     const params = useParams();
     
     const books = useSelector((state) => state.book)
-    const book = books.find(book => book.ISBN === params.id)
-    console.log('Initial array: ',books);
-    console.log('Book Detail: ',book.ISBN);
-    console.log(params.id);
+    const book = books.find(book => Number(book.ISBN) === Number(params.id) )
+    // console.log('Initial array: ',books);
+    // console.log('Book Detail: ',book.ISBN);
+    // console.log(params.id);
     
     const navigate = useNavigate()
     const dispatch = useDispatch()
