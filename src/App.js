@@ -1,4 +1,7 @@
-import { Routes, Route } from 'react-router-dom';
+import BookPreview from './components/BookPreview'
+import BookDetail from './components/BookDetails'
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 import CreateForm from "./components/CreateForm";
 import BookPreview from '../src/components/BookPreview'
 
@@ -14,7 +17,7 @@ function App() {
         />
         <Route
           path="/:id"
-          // element={<BookDetail />}
+          element={<BookDetail />}
         />
         <Route
           path="/createbook"
