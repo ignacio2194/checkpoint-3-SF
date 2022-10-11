@@ -1,23 +1,31 @@
 import React from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { useNavigate, useParams } from 'react-router'
+import { Link } from 'react-router-dom'
+import { deleteBook } from '../features/book/bookSlice'
 import '../styles/BookDetails.css'
 
 function BookDetails() {
-    const book = {
-        "id": 1,
-        "author": "Chinua Achebe",
-        "country": "Nigeria",
-        "imageLink": "https://github.com/benoitvallon/100-best-books/blob/master/static/images/things-fall-apart.jpg?raw=true",
-        "language": "English",
-        "link": "https://en.wikipedia.org/wiki/Things_Fall_Apart\n",
-        "pages": 209,
-        "title": "Things Fall Apart",
-        "year": 1958,
-        "extract": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate."
-      }
+    const params = useParams();
+    
+    const books = useSelector((state) => state.book)
+    const book = books.find(book => book.ISBN === params.id)
+    console.log('Initial array: ',books);
+    console.log('Book Detail: ',book.ISBN);
+    console.log(params.id);
+    
+    const navigate = useNavigate()
+    const dispatch = useDispatch()
+    //Implement alert with messaje of action-confirmation like "Successfully deleted book!"
+    const deleteBookSelected = (id) => {
+        dispatch(deleteBook(id))
+        navigate('/home')
+    }
+    console.log('After delete array: ',books);
+    
   return (
-
     <div className='container'>
-        <div className='bookDetailCard' key={book.id}>
+        <div className='bookDetailCard' key={book.ISBN}>
             <img className='bookImg' src={book.imageLink}/>
             <div className='bookDetail'>
                 <div className='bookDetailBody'>
@@ -32,8 +40,8 @@ function BookDetails() {
                     <h5 className='isbn'>ISBN: {book.id}</h5>
                 </div>
                 <div className='buttonContainer'>
-                    <button className='btnUpdate'>Update</button>
-                    <button className='btnDelete'>Delete</button>
+                    <Link to={`/updatebook/${book.ISBN}`} className='btnUpdate'>Update</Link>
+                    <button className='btnDelete' onClick={() => deleteBookSelected(book.ISBN)}>Delete</button>
                 </div>  
             </div>
         </div>

@@ -1,5 +1,6 @@
 [
   {
+    "ISBN": "1",
     "author": "Chinua Achebe",
     "country": "Nigeria",
     "imageLink": "https://github.com/benoitvallon/100-best-books/blob/master/static/images/things-fall-apart.jpg?raw=true",
@@ -11,6 +12,7 @@
     "extract": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate."
   },
   {
+    "ISBN": "2",
     "author": "Hans Christian Andersen",
     "country": "Denmark",
     "imageLink": "https://github.com/benoitvallon/100-best-books/blob/master/static/images/fairy-tales.jpg?raw=true",
@@ -22,6 +24,7 @@
     "extract": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate."
   },
   {
+    "ISBN": "3",
     "author": "Dante Alighieri",
     "country": "Italy",
     "imageLink": "https://github.com/benoitvallon/100-best-books/blob/master/static/images/the-divine-comedy.jpg?raw=true",
@@ -33,6 +36,7 @@
     "extract": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate."
   },
   {
+    "ISBN": "4",
     "author": "Unknown",
     "country": "Sumer and Akkadian Empire",
     "imageLink": "https://github.com/benoitvallon/100-best-books/blob/master/static/images/the-epic-of-gilgamesh.jpg?raw=true",
@@ -44,6 +48,7 @@
     "extract": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate."
   },
   {
+    "ISBN": "5",
     "author": "Unknown",
     "country": "Achaemenid Empire",
     "imageLink": "https://github.com/benoitvallon/100-best-books/blob/master/static/images/the-book-of-job.jpg?raw=true",
@@ -55,6 +60,7 @@
     "extract": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate."
   },
   {
+    "ISBN": "6",
     "author": "Unknown",
     "country": "India/Iran/Iraq/Egypt/Tajikistan",
     "imageLink": "https://github.com/benoitvallon/100-best-books/blob/master/static/images/one-thousand-and-one-nights.jpg?raw=true",
@@ -66,6 +72,7 @@
     "extract": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate."
   },
   {
+    "ISBN": "7",
     "author": "Unknown",
     "country": "Iceland",
     "imageLink": "https://github.com/benoitvallon/100-best-books/blob/master/static/images/njals-saga.jpg?raw=true",
@@ -77,6 +84,7 @@
     "extract": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate."
   },
   {
+    "ISBN": "8",
     "author": "Jane Austen",
     "country": "United Kingdom",
     "imageLink": "https://github.com/benoitvallon/100-best-books/blob/master/static/images/pride-and-prejudice.jpg?raw=true",
@@ -88,6 +96,7 @@
     "extract": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate."
   },
   {
+    "ISBN": "9",
     "author": "Honor\u00e9 de Balzac",
     "country": "France",
     "imageLink": "https://github.com/benoitvallon/100-best-books/blob/master/static/images/le-pere-goriot.jpg?raw=true",
@@ -99,6 +108,7 @@
     "extract": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate."
   },
   {
+    "ISBN": "10",
     "author": "Samuel Beckett",
     "country": "Republic of Ireland",
     "imageLink": "https://github.com/benoitvallon/100-best-books/blob/master/static/images/molloy-malone-dies-the-unnamable.jpg?raw=true",
