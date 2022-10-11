@@ -1,4 +1,5 @@
 import '../styles/CreateForm.css'
+import React from "react";
 import { useState , useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import {addBook,editBook} from '../features/book/bookSlice'
@@ -19,7 +20,7 @@ const CreateForm = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const params = useParams();
-    const books = useSelector(state => state.book)
+    const books = useSelector((state) => state.book)
 
     const handleChange = (e) => {
         setBook({
@@ -44,12 +45,12 @@ const CreateForm = () => {
 
     useEffect(() => {
         if(params.id) {
-            setBook(books.find((book) => book.id === params.id))
+            setBook(books.find((book) => book.ISBN === params.id))
         }
     }, [])
 
     return (
-        <div className='formContainer'>
+        <div className='d-flex justify-content-center w-100'>
             <form className='form' onSubmit={handleSubmit}>
 
                 <h1 className='title'>Create Book</h1>
