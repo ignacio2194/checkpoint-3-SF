@@ -13,7 +13,7 @@ function BookDetails() {
     const books = useSelector((state) => state.book)
     const book = books.find(book => Number(book.ISBN) === Number(params.id) )
     // console.log('Initial array: ',books);
-    console.log('Book Detail: ',book);
+    // console.log('Book Detail: ',book.ISBN);
     // console.log(params.id);
     
     const navigate = useNavigate()
