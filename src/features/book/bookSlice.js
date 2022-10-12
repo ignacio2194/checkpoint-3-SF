@@ -11,12 +11,12 @@ export const bookSlice = createSlice({
             state.push(action.payload)
         },
         editBook: (state,action) => {
-            const {ISBN, title, author, extract, year} = action.payload
+            const {ISBN, title, author, description, year} = action.payload
             const foundBook = state.find((book) => book.ISBN === ISBN)
             if (foundBook) {
                 foundBook.title = title
                 foundBook.author = author
-                foundBook.extract = extract
+                foundBook.description = description
                 foundBook.year = year
             }
         },

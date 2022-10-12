@@ -31,5 +31,4 @@ function BookPreview() {
     </div>
   )
 }
-
-export default BookPreview
+export default BookPreview;
