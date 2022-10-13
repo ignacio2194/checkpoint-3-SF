@@ -19,7 +19,7 @@ function BookPreview() {
     }
 
   return (
-    <div className='listContainer'>
+    <div className='listContainer container'>
         {books.map((book) => {
           return (
             <div className='previewCardContainer' key={book.ISBN} onClick={() => showDetails(book.ISBN)}>

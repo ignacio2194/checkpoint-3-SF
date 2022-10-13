@@ -4,6 +4,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import CreateForm from "./components/CreateForm";
 import Navbar from "./components/Navbar"
+import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
@@ -11,7 +12,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route
-          path="/home"
+          path="*"
           element={<BookPreview />}
         />
         <Route
@@ -36,7 +37,7 @@ function App() {
         />
       </Routes>
 
-      {/* Footer here */}
+      <Footer/>
     </div>
   );
 }
