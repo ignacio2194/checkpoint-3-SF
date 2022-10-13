@@ -14,7 +14,7 @@ const Navbar = () => {
     {/* elements of colapse menu*/}
     <div className="collapse navbar-collapse  " id="menu">
     <ul className="navbar-nav  navbar-light ms-auto text-light">
-      <li className="nav-item ms-auto m-2">Create</li>
+      <li className="nav-item ms-auto m-2">Add Book</li>
       <li className="nav-item ms-auto m-2">Update</li>
       <li className="nav-item ms-auto m-2">Delete</li>
       <li className="nav-item ms-auto m-2">Login</li>
