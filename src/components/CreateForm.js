@@ -9,12 +9,16 @@ import { useNavigate, useParams } from 'react-router-dom';
 const CreateForm = () => {
 
     const [book, setBook] = useState({
-        title: '',
-        author: '',
-        date: '',
-        image: '',
-        description: '',
         ISBN: '',
+        author: '',
+        country: '',
+        imageLink: '',
+        language: '',
+        link: '',
+        pages:'',
+        title: '',
+        year: '',
+        description: ''
     })
 
     const dispatch = useDispatch();
@@ -75,14 +79,47 @@ const CreateForm = () => {
                         value={book.author}
                     />
                 </div>
-                <label  className="form-label">Date of Publication</label>
+                <label  className="form-label">Country</label>
+
                 <div className="mb-3">
                     <input
-                        type="date"
+                        type="text"
                         className="form-control"
-                        name='date'
+                        name='country'
                         onChange={handleChange}
-                        value={book.date}
+                        value={book.country}
+                    />
+                </div>
+                <label  className="form-label">Year of Publication</label>
+                <div className="mb-3">
+                    <input
+                        type="number"
+                        className="form-control"
+                        name='year'
+                        onChange={handleChange}
+                        value={book.year}
+                    />
+                </div>
+                <label  className="form-label">Language</label>
+
+                <div className="mb-3">
+                    <input
+                        type="text"
+                        className="form-control"
+                        name='language'
+                        onChange={handleChange}
+                        value={book.language}
+                    />
+                </div>
+                <label  className="form-label">Total Pages</label>
+
+                <div className="mb-3">
+                    <input
+                        type="number"
+                        className="form-control"
+                        name='pages'
+                        onChange={handleChange}
+                        value={book.pages}
                     />
                 </div>
                 <label  className="form-label">Image</label>
@@ -90,9 +127,10 @@ const CreateForm = () => {
                     <input
                         type="text"
                         className="form-control"
-                        name='image'
+                        name='imageLink'
+                        placeholder='add link to imagen'
                         onChange={handleChange}
-                        value={book.image}
+                        value={book.imageLink}
                     />
                 </div>
                 <label  className="form-label">Description</label>
@@ -102,6 +140,17 @@ const CreateForm = () => {
                         name='description'
                         onChange={handleChange}
                         value={book.description}
+                    />
+                </div>
+                <label  className="form-label">More info</label>
+                <div className="mb-3">
+                    <input
+                        type="text"
+                        className="form-control"
+                        name='link'
+                        placeholder='add link to more information'
+                        onChange={handleChange}
+                        value={book.link}
                     />
                 </div>
                 <button type="submit" className="btn btn-primary">Create</button>
