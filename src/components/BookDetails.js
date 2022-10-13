@@ -5,13 +5,11 @@ import { Link } from 'react-router-dom'
 import { deleteBook } from '../features/book/bookSlice'
 import '../styles/BookDetails.css'
 
-//fix bug of BookDetails from new book (undefined, because can´t resolve the .find() logic)
-
 function BookDetails() {
     const params = useParams();
     
     const books = useSelector((state) => state.book)
-    const book = books.find(book => Number(book.ISBN) === Number(params.id) )
+    const book = books.find(book => book.ISBN === params.id )
     // console.log('Initial array: ',books);
     // console.log('Book Detail: ',book.ISBN);
     // console.log(params.id);
