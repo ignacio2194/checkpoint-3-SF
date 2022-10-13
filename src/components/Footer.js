@@ -36,7 +36,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="text-footer">
+      <div className="text-footer xs">
         <div> <p>Derechos reservados Avalith© skill factory Reactjs 2022</p> </div>
        
       </div>
