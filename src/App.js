@@ -12,7 +12,8 @@ function App() {
       <Navbar/>
       <Routes>
         <Route
-          path="*"
+        //El path * deberia llevarnos a la page de error 404
+          path="/"
           element={<BookPreview />}
         />
         <Route

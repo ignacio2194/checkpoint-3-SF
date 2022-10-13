@@ -11,7 +11,7 @@ function BookDetails() {
     const books = useSelector((state) => state.book)
     const book = books.find(book => book.ISBN === params.id )
     // console.log('Initial array: ',books);
-    // console.log('Book Detail: ',book.ISBN);
+    console.log('Book Detail: ',book.ISBN);
     // console.log(params.id);
     
     const navigate = useNavigate()
@@ -19,20 +19,20 @@ function BookDetails() {
     //Implement alert with messaje of action-confirmation like "Successfully deleted book!"
     const deleteBookSelected = (id) => {
         dispatch(deleteBook(id))
-        navigate('/home')
+        navigate('/')
     }
     console.log('After delete array: ',books);
     
   return (
     <div className='container'>
         <div className='bookDetailCard' key={book.ISBN}>
-            <img className='bookImg' src={book.imageLink}/>
+            <img className='bookImg' alt='Book' src={book.imageLink}/>
             <div className='bookDetail'>
                 <div className='bookDetailBody'>
                     <h3 className='bookTitle'>{book.title}</h3>
                     <h5 className='bookAuthor'>{book.author}</h5>
                     <h5 className='bookAuthor'>extract: {book.description}</h5>
-                    <a className='bookAuthor' href={book.link} target='_blank'>More info</a>
+                    <a className='bookAuthor' href={book.link} target='_blank' rel="noopener noreferrer">More info</a>
                 </div>
                 <div className='bookDetailFooter'>
                     <h5 className='pages'>Pages: {book.pages}</h5>

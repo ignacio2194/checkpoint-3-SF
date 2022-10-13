@@ -44,7 +44,7 @@ const CreateForm = () => {
             }))
 
         }
-        navigate('/home')
+        navigate('/')
     }
 
     useEffect(() => {
