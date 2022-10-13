@@ -4,7 +4,7 @@ import "../styles/Footer.css";
 import logoAvalith from '../assets/avalith_logo.png'
 const Footer = () => {
   return (
-    <div className="footer d-flex justify-content-evenly p-3">
+    <div className="footer d-flex justify-content-between p-3">
       <div className="footer-container">
         <h4>Contact us</h4>
         <ul className=" list-unstyled">
@@ -36,8 +36,8 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="text-footer">
-        <div> <p>Derechos reservados Avalith© skill factory Reactjs 2022</p> </div>
+      <div className="  text-footer d-flex flex-column justify-content-end">
+        <div> <p className = "">Derechos reservados Avalith© skill factory Reactjs 2022</p> </div>
        
       </div>
       <div className="footer_logo ">
