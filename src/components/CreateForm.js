@@ -54,15 +54,15 @@ const CreateForm = () => {
     }, [])
 
     return (
-        <div className='d-flex justify-content-center w-100  '>
-            <form className='form p-4 m-4 rounded shadow-lg' onSubmit={handleSubmit}>
+        <div className='d-flex justify-content-center  '>
+            <form className='form p-4 m-4 rounded shadow-lg col-2' onSubmit={handleSubmit}>
 
                 <h1 className='title'>Add Book</h1>
                 <label  className="form-label ">Title</label>
                 <div className="mb-1 ">
                     <input
                         type="text"
-                        className="form-control-lg"
+                        className="form-control-sm w-100"
                         name='title'
                         onChange={handleChange}
                         value={book.title}
@@ -73,7 +73,7 @@ const CreateForm = () => {
                 <div className="mb-1">
                     <input
                         type="text"
-                        className="form-control-lg"
+                        className="form-control-sm w-100"
                         name='author'
                         onChange={handleChange}
                         value={book.author}
@@ -84,7 +84,7 @@ const CreateForm = () => {
                 <div className="mb-1">
                     <input
                         type="text"
-                        className="form-control-lg"
+                        className="form-control-sm w-100"
                         name='country'
                         onChange={handleChange}
                         value={book.country}
@@ -94,29 +94,18 @@ const CreateForm = () => {
                 <div className="mb-1">
                     <input
                         type="number"
-                        className="form-control-lg"
+                        className="form-control-sm w-100"
                         name='year'
                         onChange={handleChange}
                         value={book.year}
                     />
-                </div>
-                <label  className="form-label">Language</label>
-
-                <div className="mb-1">
-                    <input
-                        type="text"
-                        className="form-control-lg"
-                        name='language'
-                        onChange={handleChange}
-                        value={book.language}
-                    />
-                </div>
+                </div> 
                 <label  className="form-label ">Total Pages</label>
 
                 <div className="mb-1">
                     <input
                         type="number"
-                        className="form-control-lg"
+                        className="form-control-sm w-100"
                         name='pages'
                         onChange={handleChange}
                         value={book.pages}
@@ -126,7 +115,7 @@ const CreateForm = () => {
                 <div className="mb-1">
                     <input
                         type="text"
-                        className="form-control-lg"
+                        className="form-control-sm w-100"
                         name='imageLink'
                         placeholder='add link to imagen'
                         onChange={handleChange}
@@ -137,7 +126,7 @@ const CreateForm = () => {
                 <div className="mb-1 ">
                     <textarea                    
                         rows="5"
-                        className="form-control-lg "
+                        className="form-control-sm w-100"
                         name='description'
                         onChange={handleChange}
                         value={book.description}
@@ -147,7 +136,7 @@ const CreateForm = () => {
                 <div className="mb-3">
                     <input
                         type="text"
-                        className="form-control-lg"
+                        className="form-control-sm w-100"
                         name='link'
                         placeholder='add link to more information'
                         onChange={handleChange}
