@@ -16,8 +16,8 @@ const Navbar = () => {
     <div className="collapse navbar-collapse  " id="menu">
     <ul className="navbar-nav  navbar-light ms-auto text-light">
 
-        <Link to='/createbook' className="text-light">
-        <li className="nav-item ms-auto m-3">Add book</li>
+        <Link to='/createbook' className="text-light ms-auto">
+        <li className="nav-item  m-3">Add book</li>
         </Link>
    
       <li className="nav-item ms-auto m-3">Login</li>
