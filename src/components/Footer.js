@@ -4,7 +4,7 @@ import "../styles/Footer.css";
 import logoAvalith from '../assets/avalith_logo.png'
 const Footer = () => {
   return (
-    <div className="footer d-flex justify-content-between p-3">
+    <div className="footer d-flex justify-content-between p-3 bottom w-100 ">
       <div className="footer-container">
         <h4>Contact us</h4>
         <ul className=" list-unstyled">
