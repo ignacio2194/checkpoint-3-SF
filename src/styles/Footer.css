@@ -1,17 +1,16 @@
 
 a{
     text-decoration:none!important;
-    color: #0f0e17 !important;
+    color: #fff !important;
     
 }
 .footer{
-    background-color: #cececb;
+    background-color: #1f1d30;
 }
 .footer_logo{
     max-width: 100%;
     height: auto;
 }
 .text-footer{
-margin:160px 0 0 150px;
     text-align: center;
 }
