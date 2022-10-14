@@ -1,0 +1,16 @@
+
+a{
+    text-decoration:none!important;
+    color: #fff !important;
+    
+}
+.footer{
+    background-color: #1f1d30;
+}
+.footer_logo{
+    max-width: 100%;
+    height: auto;
+}
+.text-footer{
+    text-align: center;
+}

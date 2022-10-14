@@ -1,0 +1,26 @@
+:root {
+    --Background: #0f0e17;
+    --BackgroundForm: #1f1d30 ;
+    --Headline: #fffffe;
+    --Paragraph: #a7a9be;
+    --Button: #ff8906;
+    --ButtonText: #fffffe;
+    --Stroke: black;
+    --Main: #fffffe;
+    --Highlight: #ff8906;
+    --Secondary: #f25f4c;
+    --Tertiary: #e53170;
+}
+
+
+.title {
+    color: #ff8906 ;
+}
+.form {
+    color: #fffffe ;
+    border: solid 1px #ff8906;     
+}
+.btn{    
+    background-color: var(--Button)!important;    
+    border: none!important;    
+}

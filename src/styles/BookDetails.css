@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@300;400;500&family=Roboto:wght@100;300;500&display=swap');
+:root {
+    --Background: #0f0e17;
+    --BackgroundCard: #17171c ;
+    --Headline: #fffffe;
+    --Paragraph: #a7a9be;
+    --Button: #ff8906;
+    --ButtonText: #fffffe;
+    --Stroke: black;
+    --Main: #fffffe;
+    --Highlight: #ff8906;
+    --Secondary: #f25f4c;
+    --Tertiary: #e53170;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: var(--Background);
+}
+.bookDetailCard {
+    display: flex;
+    margin-top: 100px;
+    border: 1px solid var(--Highlight);
+    border-radius: 3px;
+    padding: 10px;
+    background-color: var(--BackgroundCard);
+    gap: 15px;
+    box-shadow: rgba(238, 120, 36, 0.4) 0px 0px 0px 2px, rgba(187, 116, 35, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.bookDetail {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.bookDetailBody {
+    gap: 3px;
+    align-self: flex-start;
+    margin: 0 10px;
+    color: var(--Paragraph);
+}
+.bookDetailFooter {
+    display: flex;
+    margin: 10px;
+    gap: 130px;
+    width: 500px;
+    color: var(--Paragraph)
+}
+.bookAuthor {
+    font-family: 'lato', sans-serif;
+    font-weight: lighter;
+    text-align: left;
+    width: 500px;
+    
+    color: var(--Paragraph);
+}
+.bookTitle {
+    text-align: left;
+    color: var(--Headline);
+}
+.bookImg {
+    width: auto;
+    height: auto;
+}
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+.btnUpdate {
+    border: 1px solid var(--Highlight);
+    border-radius: 3px;
+    margin: 10px 100px;
+    padding: 5px 15px;
+    color: var(--ButtonText);
+    font-weight: 600;
+    background-color: var(--Button);
+    transition: 0.3s;
+}
+.btnDelete {
+    border: 1px solid var(--Highlight);
+    border-radius: 3px;
+    margin: 10px 100px;
+    padding: 5px 15px;
+    color: var(--ButtonText);
+    font-weight: 600;
+    background-color: var(--Button);
+    transition: 0.3s;
+}
+.btnUpdate:hover {
+    background-color: var(--Secondary);
+    cursor: pointer;
+}
+.btnDelete:hover {
+    background-color: var(--Tertiary);
+    cursor: pointer;
+}
+
+/*-----------------------------TABLET-----------------------------*/
+@media (max-width: 970px) {
+    .bookDetail {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+    .bookDetailBody {
+        display: flex;
+        flex-direction: column;
+    }
+    .bookDetailFooter {
+        display: flex;
+        margin: 0 10px;
+        gap: 30px;
+        width: 300px;
+        color: var(--Paragraph)
+    }
+    .bookAuthor {
+        text-align: left;
+        width: 320px;
+        margin: 12px 0;
+    }
+    .bookImg {
+        width: auto;
+        height: 420px;
+    }
+    .btnUpdate {
+        border: 1px solid var(--Highlight);
+        border-radius: 3px;
+        margin: 10px 50px;
+        padding: 5px 15px;
+        color: var(--ButtonText);
+        font-weight: 600;
+        background-color: var(--Button);
+        transition: 0.3s;
+    }
+    .btnDelete {
+        border: 1px solid var(--Highlight);
+        border-radius: 3px;
+        margin: 10px 50px;
+        padding: 5px 15px;
+        color: var(--ButtonText);
+        font-weight: 600;
+        background-color: var(--Button);
+        transition: 0.3s;
+    }  
+}
+/*-----------------------------SMARTPHONE-----------------------------*/
+@media (max-width: 750px) {
+    .bookDetailCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border: 1px solid var(--Highlight);
+        border-radius: 3px;
+        padding: 10px;
+        background-color: var(--BackgroundCard);
+        gap: 15px;
+        box-shadow: rgba(238, 120, 36, 0.4) 0px 0px 0px 2px, rgba(187, 116, 35, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+    .bookDetailBody {
+        display: flex;
+        flex-direction: column;
+    }
+    .bookDetailFooter {
+        gap: 10px;
+        width: 250px;
+    }
+    .bookAuthor {
+        text-align: center;
+        width: 250px;
+        margin: 6px;
+    }
+    .bookTitle {
+        text-align: center;
+        width: 250px;
+    }
+    .btnUpdate {
+        margin: 10px 30px;
+    }
+    .btnDelete {
+        margin: 10px 30px;
+    } 
+}
