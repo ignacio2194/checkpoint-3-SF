@@ -11,11 +11,7 @@ const CreateForm = () => {
     const [book, setBook] = useState({
         ISBN: '',
         author: '',
-        country: '',
         imageLink: '',
-        language: '',
-        link: '',
-        pages:'',
         title: '',
         year: '',
         description: ''
@@ -55,7 +51,7 @@ const CreateForm = () => {
 
     return (
         <div className='d-flex justify-content-center  '>
-            <form className='form p-4 m-4 rounded shadow-lg col-2' onSubmit={handleSubmit}>
+            <form className='form p-4 m-4 rounded shadow-lg col-6' onSubmit={handleSubmit}>
 
                 <h1 className='title'>Add Book</h1>
                 <label  className="form-label ">Title</label>
@@ -79,17 +75,7 @@ const CreateForm = () => {
                         value={book.author}
                     />
                 </div>
-                <label  className="form-label">Country</label>
-
-                <div className="mb-1">
-                    <input
-                        type="text"
-                        className="form-control-sm w-100"
-                        name='country'
-                        onChange={handleChange}
-                        value={book.country}
-                    />
-                </div>
+                
                 <label  className="form-label">Year of Publication</label>
                 <div className="mb-1">
                     <input
@@ -100,17 +86,6 @@ const CreateForm = () => {
                         value={book.year}
                     />
                 </div> 
-                <label  className="form-label ">Total Pages</label>
-
-                <div className="mb-1">
-                    <input
-                        type="number"
-                        className="form-control-sm w-100"
-                        name='pages'
-                        onChange={handleChange}
-                        value={book.pages}
-                    />
-                </div>
                 <label  className="form-label">Image</label>
                 <div className="mb-1">
                     <input
@@ -130,17 +105,6 @@ const CreateForm = () => {
                         name='description'
                         onChange={handleChange}
                         value={book.description}
-                    />
-                </div>
-                <label  className="form-label">More info</label>
-                <div className="mb-3">
-                    <input
-                        type="text"
-                        className="form-control-sm w-100"
-                        name='link'
-                        placeholder='add link to more information'
-                        onChange={handleChange}
-                        value={book.link}
                     />
                 </div>
                 <button type="submit" className="btn btn-primary col-5">Create</button>
