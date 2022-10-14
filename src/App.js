@@ -14,11 +14,11 @@ function App() {
       <Routes>
         <Route
         //El path * deberia llevarnos a la page de error 404
-          path="/"
+          path="/booklist"
           element={<BookPreview />}
         />
         <Route 
-          path="/home"
+          path="/"
           element={<Home />}
           />
         <Route
