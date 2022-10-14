@@ -1,15 +1,11 @@
 
 a{
     text-decoration:none!important;
-    color: #0f0e17 !important;
+    color: #fff !important;
     
 }
 .footer{
-    background-color: #cececb;
-    /* position: absolute;
-    top: auto;
-    bottom: 0; */
-    
+    background-color: #1f1d30;
 }
 .footer_logo{
     max-width: 100%;
