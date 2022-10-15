@@ -9,21 +9,21 @@ function Home() {
     <Carousel className='m-5 position-relative'>
       <Carousel.Item className="block" interval={3000}>
         <img
-          className=" carImage col-lg-12 col-sm-12 col-12"
+          className="col-lg-12 col-sm-12 col-12"
           src="https://cdn.discordapp.com/attachments/783499342010777631/1030668480862748672/banner1.jpg"
           alt="Welcome Sign"
         />     
       </Carousel.Item>
       <Carousel.Item className="block" interval={3000}>
         <img
-          className=" carImage h-80 col-lg-12 col-sm-12 col-12"
+          className="col-lg-12 col-sm-12 col-12"
           src="https://cdn.discordapp.com/attachments/783499342010777631/1030636690580193370/banner2.jpg"
           alt="How to Use Our App"
         />   
       </Carousel.Item>
       <Carousel.Item className="block " interval={3000}>
         <img
-          className="carImage col-lg-12 col-sm-12 col-12"
+          className="col-lg-12 col-sm-12 col-12"
           src="https://cdn.discordapp.com/attachments/783499342010777631/1030666186888851476/meetourteam.jpg"
           alt="Our Team"
         />       
