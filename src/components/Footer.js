@@ -1,10 +1,47 @@
 import React from "react";
-import { AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import "../styles/Footer.css";
 import logoAvalith from '../assets/avalith_logo.png'
 const Footer = () => {
   return (
-    <div className="footer d-flex justify-content-between p-3 container-fluid">
+    <div className="footerContainer">
+      <div className="footerLinkContainer">
+        <div className="footerLinks">
+          <a className="link" href="https://www.linkedin.com/in/ignaciobntz/">
+            {<AiFillLinkedin />} Georgina Bosque
+          </a>
+          <a className="link" href="https://www.linkedin.com/in/ignaciobntz/">
+            {<AiFillLinkedin />} Ignacio Benitez
+          </a>
+        </div>
+        <div className="footerLinks">
+          <a className="link" href="https://www.linkedin.com/in/ignaciobntz/">
+            {<AiFillLinkedin />} Franco Yunes
+          </a>
+          <a className="link" href="https://www.linkedin.com/in/ignaciobntz/">
+            {<AiFillLinkedin />} Ezequiel Rango
+          </a>
+        </div>
+        <div className="footerLinks">
+          <a className="link" href="https://www.linkedin.com/in/ignaciobntz/">
+            {<AiFillLinkedin />} Fernando Clemens
+          </a>
+          <a className="link" href="https://www.linkedin.com/in/ignaciobntz/">
+          {<AiFillGithub />} Repositorio
+          </a>
+        </div>
+      </div>
+      <div className="footerLogo">
+        <img src={logoAvalith} className="logo"/>
+        <p>Skill Factory React 2022</p>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;
+
+    {/* <div className="footer d-flex justify-content-between p-3 container-fluid"> */}
       {/* <div className="footer-container">
         <h4>Contact us</h4>
         <ul className=" list-unstyled">
@@ -43,7 +80,7 @@ const Footer = () => {
       <div className="footer_logo ">
         <img src={logoAvalith} alt=""></img>
       </div> */}
-      <div className="container-fluid">
+      {/* <div className="container-fluid">
         <div className="row">
           <div className="row-4 text-white">
           <ul className=" list-unstyled ">
@@ -83,8 +120,4 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
-};
-
-export default Footer;
+    </div> */}

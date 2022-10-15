@@ -50,9 +50,8 @@ const CreateForm = () => {
     }, [])
 
     return (
-        <div className='d-flex justify-content-center  '>
-            <form className='form p-4 m-4 rounded shadow-lg col-6' onSubmit={handleSubmit}>
-
+        <div className='d-flex justify-content-center container-fluid'>
+            <form className='form p-4 m-4 rounded shadow-lg col-6 w-75 col-sm-6' onSubmit={handleSubmit}>
                 <h1 className='title'>Add Book</h1>
                 <label  className="form-label ">Title</label>
                 <div className="mb-1 ">
