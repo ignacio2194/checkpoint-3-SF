@@ -5,6 +5,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import {addBook,editBook} from '../features/book/bookSlice'
 import { v4 as uuid } from 'uuid';
 import { useNavigate, useParams } from 'react-router-dom';
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const CreateForm = () => {
 
@@ -20,6 +22,30 @@ const CreateForm = () => {
         year: '',
         description: ''
     })
+    const notifyEdit = () => {
+        toast.success(" Successfully updated book!!", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+      };
+      const notifyCreate = () => {
+        toast.success(" Successfully created book!!", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+      };
 
     const dispatch = useDispatch();
     const navigate = useNavigate();
@@ -31,18 +57,20 @@ const CreateForm = () => {
             ...book,
             [e.target.name] : e.target.value
         })
+
     }
     
     const handleSubmit = (e) => {
         e.preventDefault()
         if (params.id) {
             dispatch(editBook(book))
+            notifyEdit()
         }else{
             dispatch(addBook({
                 ...book,
                 ISBN: uuid()
             }))
-
+            notifyCreate()
         }
         navigate('/')
     }

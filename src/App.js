@@ -6,6 +6,8 @@ import CreateForm from "./components/CreateForm";
 import Navbar from "./components/Navbar"
 import Footer from './components/Footer';
 import Home from './components/Home';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
     <div className="App">
@@ -44,6 +46,7 @@ function App() {
       </Routes>
 
       <Footer/>
+      <ToastContainer/>
     </div>
   );
 }
