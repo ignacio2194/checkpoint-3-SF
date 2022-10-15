@@ -6,26 +6,26 @@ import { Link } from "react-router-dom"
 function Home() {
   return (
     <>
-    <Carousel className='m-5'>
-      <Carousel.Item className="block" interval={2000}>
+    <Carousel className='m-5 position-relative'>
+      <Carousel.Item className="block" interval={3000}>
         <img
-          className="d-flex w-20 mx-auto "
-          src="https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/fairy-tales.jpg"
-          alt="First slide"
+          className="col-lg-12 col-sm-12 col-12"
+          src="https://cdn.discordapp.com/attachments/783499342010777631/1030668480862748672/banner1.jpg"
+          alt="Welcome Sign"
         />     
       </Carousel.Item>
-      <Carousel.Item className="block" interval={2000}>
+      <Carousel.Item className="block" interval={3000}>
         <img
-          className="d-flex w-20 mx-auto"
-          src="https://github.com/benoitvallon/100-best-books/blob/master/static/images/the-book-of-job.jpg?raw=true"
-          alt="Second slide"
+          className="col-lg-12 col-sm-12 col-12"
+          src="https://cdn.discordapp.com/attachments/783499342010777631/1030636690580193370/banner2.jpg"
+          alt="How to Use Our App"
         />   
       </Carousel.Item>
-      <Carousel.Item className="block " interval={2000}>
+      <Carousel.Item className="block " interval={3000}>
         <img
-          className="d-flex w-20 mx-auto"
-          src="https://github.com/benoitvallon/100-best-books/blob/master/static/images/the-divine-comedy.jpg?raw=true"
-          alt="Third slide"
+          className="col-lg-12 col-sm-12 col-12"
+          src="https://cdn.discordapp.com/attachments/783499342010777631/1030666186888851476/meetourteam.jpg"
+          alt="Our Team"
         />       
       </Carousel.Item>
     </Carousel>
