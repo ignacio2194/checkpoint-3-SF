@@ -6,6 +6,8 @@ import CreateForm from "./components/CreateForm";
 import Navbar from "./components/Navbar"
 import Footer from './components/Footer';
 import Home from './components/Home';
+import './styles/App.css'
+
 function App() {
   return (
     <div className="App">
@@ -42,7 +44,6 @@ function App() {
           //element={<UserLogin />}
         />
       </Routes>
-
       <Footer/>
     </div>
   );

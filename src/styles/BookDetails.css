@@ -15,11 +15,11 @@
 .container {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: var(--Background);
 }
 .bookDetailCard {
     display: flex;
-    margin-top: 100px;
     border: 1px solid var(--Highlight);
     border-radius: 3px;
     padding: 10px;
@@ -40,7 +40,7 @@
 }
 .bookDetailFooter {
     display: flex;
-    margin: 10px;
+    margin: 0 10px;
     gap: 130px;
     width: 500px;
     color: var(--Paragraph)
@@ -50,8 +50,9 @@
     font-weight: lighter;
     text-align: left;
     width: 500px;
-    
     color: var(--Paragraph);
+    margin: 40px 0;
+    transition: 0.3s;
 }
 .bookTitle {
     text-align: left;
@@ -64,6 +65,8 @@
 .buttonContainer {
     display: flex;
     justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .btnUpdate {
     border: 1px solid var(--Highlight);
@@ -74,6 +77,7 @@
     font-weight: 600;
     background-color: var(--Button);
     transition: 0.3s;
+    text-decoration: none;
 }
 .btnDelete {
     border: 1px solid var(--Highlight);
@@ -92,6 +96,10 @@
 .btnDelete:hover {
     background-color: var(--Tertiary);
     cursor: pointer;
+}
+.isbn {
+    margin: 0;
+    transition: 0.3s;
 }
 
 /*-----------------------------TABLET-----------------------------*/
@@ -116,6 +124,7 @@
         text-align: left;
         width: 320px;
         margin: 12px 0;
+        font-size: medium;
     }
     .bookImg {
         width: auto;
@@ -124,7 +133,7 @@
     .btnUpdate {
         border: 1px solid var(--Highlight);
         border-radius: 3px;
-        margin: 10px 50px;
+        margin: 10px 40px;
         padding: 5px 15px;
         color: var(--ButtonText);
         font-weight: 600;
@@ -134,12 +143,15 @@
     .btnDelete {
         border: 1px solid var(--Highlight);
         border-radius: 3px;
-        margin: 10px 50px;
+        margin: 10px 40px;
         padding: 5px 15px;
         color: var(--ButtonText);
         font-weight: 600;
         background-color: var(--Button);
         transition: 0.3s;
+    }
+    .isbn {
+        font-size: medium;
     }  
 }
 /*-----------------------------SMARTPHONE-----------------------------*/
@@ -168,18 +180,22 @@
         width: 250px;
     }
     .bookAuthor {
-        text-align: center;
+        text-align: left;
         width: 250px;
         margin: 6px;
+        font-weight:100;
     }
     .bookTitle {
-        text-align: center;
+        text-align: left;
         width: 250px;
     }
     .btnUpdate {
-        margin: 10px 30px;
+        margin: 20px 30px;
     }
     .btnDelete {
-        margin: 10px 30px;
+        margin: 20px 30px;
+    }
+    .isbn {
+        margin: 6px;
     } 
 }

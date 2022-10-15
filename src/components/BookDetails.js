@@ -2,6 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate, useParams } from 'react-router'
 import { Link } from 'react-router-dom'
+import { toast, ToastContainer } from 'react-toastify'
 import { deleteBook } from '../features/book/bookSlice'
 import '../styles/BookDetails.css'
 
@@ -20,9 +21,21 @@ function BookDetails() {
     const deleteBookSelected = (id) => {
         dispatch(deleteBook(id))
         navigate('/')
+        //showAlert()
     }
     console.log('After delete array: ',books);
-    
+/*     const showAlert = () => {
+        toast('🦄 Wow so easy!', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+        });
+    } */
   return (
     <div className='container'>
         <div className='bookDetailCard' key={book.ISBN}>
@@ -37,11 +50,25 @@ function BookDetails() {
                     <h5 className='isbn'>ISBN: {book.ISBN}</h5>
                 </div>
                 <div className='buttonContainer'>
-                    <Link to={`/updatebook/${book.ISBN}`} className='btnUpdate'>Update</Link>
+                    <Link className='btnUpdate' to={`/updatebook/${book.ISBN}`} >Update</Link>
                     <button className='btnDelete' onClick={() => deleteBookSelected(book.ISBN)}>Delete</button>
+                    {/* <button className='btnDelete' onClick={() => showAlert}>alert</button> */}
                 </div>  
             </div>
         </div>
+{/*         <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+            />
+        <ToastContainer /> */}
     </div>
   )
 }
