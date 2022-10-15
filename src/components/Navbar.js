@@ -25,7 +25,7 @@ const Navbar = () => {
                 <li className="btnNavbar">Login</li>
               </Link>
               <Link to="/register" className="text-light ms-auto">
-              <li className="btnNavbar">Register</li>
+                <li className="btnNavbar">Register</li>
               </Link>
             </ul>
           </div>

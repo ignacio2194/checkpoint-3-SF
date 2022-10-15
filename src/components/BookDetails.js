@@ -32,8 +32,8 @@ function BookDetails() {
             <div className='bookDetail'>
                 <div className='bookDetailBody'>
                     <h3 className='bookTitle'>{book.title}</h3>
-                    <h5 className='bookAuthor'>{book.author}</h5>
-                    <h5 className='bookAuthor'>extract: {book.description}</h5>
+                    <h5 className='bookAuthor'>Author: {book.author}</h5>
+                    <h5 className='bookAuthor'>Extract: {book.description}</h5>
                 </div>
                 <div className='bookDetailFooter'>
                     <h5 className='isbn'>ISBN: {book.ISBN}</h5>
