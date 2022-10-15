@@ -26,7 +26,9 @@ export const bookSlice = createSlice({
             }
         },
         deleteBook: (state, action) => {
+        
             return state.filter((book) => book.ISBN !== action.payload)
+           
         }
     }
 })
