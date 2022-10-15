@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-sm">
       <div className="container-fluid">
-        <Link to="/"><img src={logo} alt="logo" width="190"></img></Link>
+        <Link to="/"><img src={logo} alt="logo" width="120"></img></Link>
         <button className="navbar-toggler border-warning bg-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
          <span className="navbar-toggler-icon"></span>
         </button>

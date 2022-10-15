@@ -24,18 +24,7 @@ function BookDetails() {
         //showAlert()
     }
     console.log('After delete array: ',books);
-/*     const showAlert = () => {
-        toast('🦄 Wow so easy!', {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
-        });
-    } */
+
   return (
     <div className='container'>
         <div className='bookDetailCard' key={book.ISBN}>
@@ -52,23 +41,9 @@ function BookDetails() {
                 <div className='buttonContainer'>
                     <Link className='btnUpdate' to={`/updatebook/${book.ISBN}`} >Update</Link>
                     <button className='btnDelete' onClick={() => deleteBookSelected(book.ISBN)}>Delete</button>
-                    {/* <button className='btnDelete' onClick={() => showAlert}>alert</button> */}
                 </div>  
             </div>
         </div>
-{/*         <ToastContainer
-            position="top-right"
-            autoClose={5000}
-            hideProgressBar={false}
-            newestOnTop={false}
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-            theme="light"
-            />
-        <ToastContainer /> */}
     </div>
   )
 }
