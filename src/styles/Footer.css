@@ -21,16 +21,15 @@
     flex-direction: column;
 }
 .footerLogo {
-    margin: 10px;
     gap: 5px;
     display: flex;
     flex-direction: column;
     color: #a7a9be;
     align-items: center;
-    margin: 15px 100px 0 0;
     text-align: center;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 150px;
+    margin-top: 20px;
 }
 
 @media (max-width: 970px) {
