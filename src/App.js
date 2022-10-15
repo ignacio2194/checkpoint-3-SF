@@ -6,6 +6,7 @@ import CreateForm from "./components/CreateForm";
 import Navbar from "./components/Navbar"
 import Footer from './components/Footer';
 import Home from './components/Home';
+import '../src/styles/app.css'
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 function App() {
@@ -41,10 +42,9 @@ function App() {
         />
         <Route
           path="/login"
-          // element={<UserLogin />}
+          //element={<UserLogin />}
         />
       </Routes>
-
       <Footer/>
       <ToastContainer/>
     </div>

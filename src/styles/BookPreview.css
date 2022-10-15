@@ -17,7 +17,7 @@ body{
     background-color: var(--Background) !important;
 }
 .listContainer {
-    padding: 50px 0;
+    padding: 40px 10px;
     display: flex;
     justify-content: center;
     gap: 25px;
@@ -43,11 +43,14 @@ body{
     margin-right: auto;
 }
 .previewTitle {
+    margin-top: 15px;
+    font-size: larger;
     width: 250px;
     text-align: center;
     color: var(--Headline);
 }
 .previewAuthor {
+    font-size: larger;
     text-align: center;
     color: var(--Paragraph);
 }
