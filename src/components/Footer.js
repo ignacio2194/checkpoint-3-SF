@@ -4,10 +4,6 @@ import "../styles/Footer.css";
 import logoAvalith from '../assets/avalith_logo.png'
 const Footer = () => {
   return (
-<<<<<<< HEAD
-    <div className="footer d-flex justify-content-between p-3 container-fluid">
-      <div className="container-fluid">
-=======
     <div className="footerContainer">
       <div className="footerLinkContainer">
         <div className="footerLinks">
@@ -85,7 +81,6 @@ export default Footer;
         <img src={logoAvalith} alt=""></img>
       </div> */}
       {/* <div className="container-fluid">
->>>>>>> e1a789a6b411b96c6a4ae31d850509bec1ba72de
         <div className="row">
           <div className="col-12 col-sm-4  text-white text-center">
           <ul className=" list-unstyled  ">
