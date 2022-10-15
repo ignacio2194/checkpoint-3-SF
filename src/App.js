@@ -7,12 +7,14 @@ import Navbar from "./components/Navbar"
 import Footer from './components/Footer';
 import Home from './components/Home';
 import './styles/App.css'
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
     <div className="App">
-
       <Navbar/>
+      <div className='contenido'>
       <Routes>
         <Route
         //El path * deberia llevarnos a la page de error 404
@@ -44,7 +46,9 @@ function App() {
           //element={<UserLogin />}
         />
       </Routes>
+      </div>
       <Footer/>
+      <ToastContainer/>
     </div>
   );
 }
