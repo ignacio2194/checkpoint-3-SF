@@ -30,9 +30,9 @@ function Home() {
       </Carousel.Item>
     </Carousel>
     <div className='btns-home'>
-    <Link to="/createbook"><button class="btnHome" role="button"><span class="text">Add Book </span><span>Click Me!</span></button></Link>
-    <Link to="/booklist"><button class="btnHome" role="button"><span class="text">Book List </span><span>Our Books!</span></button></Link>
-    <button class="btnHome" role="button"><span class="text">Login</span><span>Get In !</span></button>
+    <Link to="/createbook"><button class="btnHome" ><span class="text">Add Book </span><span>Click Me!</span></button></Link>
+    <Link to="/booklist"><button class="btnHome" ><span class="text">Book List </span><span>Our Books!</span></button></Link>
+    <button class="btnHome"><span class="text">Login</span><span>Get In !</span></button>
     </div>
     </>
   );

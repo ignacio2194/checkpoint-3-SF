@@ -1,10 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@300;400;500&family=Roboto:wght@100;300;500&display=swap');
+:root {
+    --Background: #0f0e17;
+    --BackgroundCard: #17171c ;
+    --Headline: #fffffe;
+    --Paragraph: #a7a9be;
+    --Button: #ff8906;
+    --ButtonText: #fffffe;
+    --Stroke: black;
+    --Main: #fffffe;
+    --Highlight: #ff8906;
+    --Secondary: #f25f4c;
+    --Tertiary: #e53170;
+}
 .link {
     text-decoration: none;
     color: #a7a9be;
     margin: 2px;
 }
 .footerContainer {
-    background-color: #1f1d30;
+    background: rgb(15,14,23);
+    background: linear-gradient(313deg, rgba(15,14,23,1) 55%, rgb(43, 28, 24) 100%);  
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +46,7 @@
     margin-right: 150px;
     margin-top: 20px;
 }
-
+/*-----------------------------TABLET-----------------------------*/
 @media (max-width: 970px) {
     .footerContainer {
         font-size: small;
@@ -40,6 +55,8 @@
         margin: 15px 80px 0 0;
     }
 }
+
+/*-----------------------------SMARTPHONE-----------------------------*/
 @media (max-width: 750px) {
     .footerContainer {
         font-size: small;

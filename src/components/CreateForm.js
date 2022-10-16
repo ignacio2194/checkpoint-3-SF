@@ -27,7 +27,7 @@ const CreateForm = () => {
           pauseOnHover: true,
           draggable: true,
           progress: undefined,
-          theme: "light",
+          theme: "dark",
         });
     };
     const notifyCreate = () => {
@@ -39,7 +39,7 @@ const CreateForm = () => {
           pauseOnHover: true,
           draggable: true,
           progress: undefined,
-          theme: "light",
+          theme: "dark",
         });
     };
 

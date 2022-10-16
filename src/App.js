@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <div className='contenido'>
+      <div className='mainContent'>
       <Routes>
         <Route
         //El path * deberia llevarnos a la page de error 404

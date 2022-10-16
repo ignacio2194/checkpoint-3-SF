@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footerLogo">
-        <img src={logoAvalith} className="logo"/>
+        <img src={logoAvalith} alt='logo Avalith' className="logo"/>
         <p>Skill Factory React 2022</p>
       </div>
     </div>
