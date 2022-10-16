@@ -9,6 +9,8 @@ import Home from './components/Home';
 import './styles/App.css'
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import UserLogin from './components/UserLogin';
+import UserRegister from './components/UserRegister';
 
 function App() {
   return (
@@ -39,11 +41,11 @@ function App() {
         />
         <Route
           path="/register"
-          // element={<UserRegister />}
+          element={<UserRegister />}
         />
         <Route
           path="/login"
-          //element={<UserLogin />}
+          element={<UserLogin />}
         />
       </Routes>
       </div>
