@@ -27,10 +27,10 @@ const CreateForm = () => {
           pauseOnHover: true,
           draggable: true,
           progress: undefined,
-          theme: "light",
+          theme: "dark",
         });
-      };
-      const notifyCreate = () => {
+    };
+    const notifyCreate = () => {
         toast.success(" Successfully created book!!", {
           position: "top-right",
           autoClose: 5000,
@@ -39,9 +39,9 @@ const CreateForm = () => {
           pauseOnHover: true,
           draggable: true,
           progress: undefined,
-          theme: "light",
+          theme: "dark",
         });
-      };
+    };
 
     const dispatch = useDispatch();
     const navigate = useNavigate();

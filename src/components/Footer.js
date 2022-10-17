@@ -7,32 +7,32 @@ const Footer = () => {
     <div className="footerContainer">
       <div className="footerLinkContainer">
         <div className="footerLinks">
-          <a className="link" href="https://www.linkedin.com/in/ignaciobntz/">
+          <a className="link" href="https://www.linkedin.com/in/georginabosque/" target="_blank" rel="noreferrer">
             {<AiFillLinkedin />} Georgina Bosque
           </a>
-          <a className="link" href="https://www.linkedin.com/in/ignaciobntz/">
+          <a className="link" href="https://www.linkedin.com/in/ignaciobntz/" target="_blank" rel="noreferrer">
             {<AiFillLinkedin />} Ignacio Benitez
           </a>
         </div>
         <div className="footerLinks">
-          <a className="link" href="https://www.linkedin.com/in/ignaciobntz/">
+          <a className="link" href="https://www.linkedin.com/in/francoyunes/" target="_blank" rel="noreferrer">
             {<AiFillLinkedin />} Franco Yunes
           </a>
-          <a className="link" href="https://www.linkedin.com/in/ignaciobntz/">
+          <a className="link" href="https://www.linkedin.com/in/ezequiel-rango/" target="_blank" rel="noreferrer">
             {<AiFillLinkedin />} Ezequiel Rango
           </a>
         </div>
         <div className="footerLinks">
-          <a className="link" href="https://www.linkedin.com/in/ignaciobntz/">
+          <a className="link" href="https://www.linkedin.com/in/foclemens/" target="_blank" rel="noreferrer">
             {<AiFillLinkedin />} Fernando Clemens
           </a>
-          <a className="link" href="https://www.linkedin.com/in/ignaciobntz/">
+          <a className="link" href="https://github.com/ignacio2194/checkpoint-3-SF/tree/main" target="_blank" rel="noreferrer">
           {<AiFillGithub />} Repositorio
           </a>
         </div>
       </div>
       <div className="footerLogo">
-        <img src={logoAvalith} className="logo"/>
+        <img src={logoAvalith} alt='logo Avalith' className="logo"/>
         <p>Skill Factory React 2022</p>
       </div>
     </div>
@@ -40,84 +40,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-    {/* <div className="footer d-flex justify-content-between p-3 container-fluid"> */}
-      {/* <div className="footer-container">
-        <h4>Contact us</h4>
-        <ul className=" list-unstyled">
-          <li>
-            {" "}
-            <a href="https://www.linkedin.com/in/ignaciobntz/">
-              {<AiFillLinkedin />} Ignacio Benitez
-            </a>
-          </li>
-          <li>
-            {" "}
-            <a href="https://https://www.linkedin.com/in/francoyunes/">
-              {<AiFillLinkedin />} Franco Yunes
-            </a>
-          </li>
-          <li>
-            {" "}
-            <a href="https://www.linkedin.com/in/foclemens/">
-              {<AiFillLinkedin />} Fernando Clemens
-            </a>
-          </li>
-          <li>
-            {" "}
-            <a href="https://www.linkedin.com/in/ezequiel-rango/">{<AiFillLinkedin />} Ezequiel Rango</a>
-          </li>
-          <li>
-            {" "}
-            <a href="https://www.linkedin.com/in/georginabosque/">{<AiFillLinkedin />} Georgina Bosque</a>
-          </li>
-        </ul>
-      </div>
-      <div className="text-footer xs">
-        <div> <p>Derechos reservados Avalith© skill factory Reactjs 2022</p> </div>
-       
-      </div>
-      <div className="footer_logo ">
-        <img src={logoAvalith} alt=""></img>
-      </div> */}
-      {/* <div className="container-fluid">
-        <div className="row">
-          <div className="col-12 col-sm-4  text-white text-center">
-          <ul className=" list-unstyled  ">
-          <li >
-            {" "}
-            <a href="https://www.linkedin.com/in/ignaciobntz/">
-              {<AiFillLinkedin />} Ignacio Benitez
-            </a>
-          </li>
-          <li>
-            {" "}
-            <a href="https://https://www.linkedin.com/in/francoyunes/">
-              {<AiFillLinkedin />} Franco Yunes
-            </a>
-          </li>
-          <li>
-            {" "}
-            <a href="https://www.linkedin.com/in/foclemens/">
-              {<AiFillLinkedin />} Fernando Clemens
-            </a>
-          </li>
-          <li>
-            {" "}
-            <a href="https://www.linkedin.com/in/ezequiel-rango/">{<AiFillLinkedin />} Ezequiel Rango</a>
-          </li>
-          <li>
-            {" "}
-            <a href="https://www.linkedin.com/in/georginabosque/">{<AiFillLinkedin />} Georgina Bosque</a>
-          </li>
-        </ul>
-          </div>
-          <div className="col-12 col-sm-4 text-white text-center ">
-          <p>Derechos reservados Avalith© skill factory Reactjs 2022</p> 
-          </div>
-          <div className="col-12 col-sm-4 w-auto mx-auto    ">
-          <img src={logoAvalith}/>
-          </div>
-        </div>
-      </div>
-    </div> */}

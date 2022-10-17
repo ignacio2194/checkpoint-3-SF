@@ -18,7 +18,8 @@
 }
 .form {
     color: #fffffe ;
-    border: solid 1px #ff8906;     
+    border: solid 1px #ff8906;
+    margin-top: 1000px;  
 }
 .btn{    
     background-color: var(--Button)!important;    

@@ -6,14 +6,17 @@ import CreateForm from "./components/CreateForm";
 import Navbar from "./components/Navbar"
 import Footer from './components/Footer';
 import Home from './components/Home';
-import '../src/styles/App.css'
+import './styles/App.css'
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import UserLogin from './components/UserLogin';
+import UserRegister from './components/UserRegister';
+
 function App() {
   return (
     <div className="App">
-
       <Navbar/>
+      <div className='mainContent'>
       <Routes>
         <Route
         //El path * deberia llevarnos a la page de error 404
@@ -38,13 +41,14 @@ function App() {
         />
         <Route
           path="/register"
-          // element={<UserRegister />}
+          element={<UserRegister />}
         />
         <Route
           path="/login"
-          //element={<UserLogin />}
+          element={<UserLogin />}
         />
       </Routes>
+      </div>
       <Footer/>
       <ToastContainer/>
     </div>
