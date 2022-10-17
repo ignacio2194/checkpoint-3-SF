@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="footerContainer">
       <div className="footerLinkContainer">
         <div className="footerLinks">
-          <a className="link" href="https://www.linkedin.com/in/ignaciobntz/">
+          <a className="link" href="https://www.linkedin.com/in/georginabosque/">
             {<AiFillLinkedin />} Georgina Bosque
           </a>
           <a className="link" href="https://www.linkedin.com/in/ignaciobntz/">
@@ -15,18 +15,18 @@ const Footer = () => {
           </a>
         </div>
         <div className="footerLinks">
-          <a className="link" href="https://www.linkedin.com/in/ignaciobntz/">
+          <a className="link" href="https://https://www.linkedin.com/in/francoyunes/">
             {<AiFillLinkedin />} Franco Yunes
           </a>
-          <a className="link" href="https://www.linkedin.com/in/ignaciobntz/">
+          <a className="link" href="https://www.linkedin.com/in/ezequiel-rango/">
             {<AiFillLinkedin />} Ezequiel Rango
           </a>
         </div>
         <div className="footerLinks">
-          <a className="link" href="https://www.linkedin.com/in/ignaciobntz/">
+          <a className="link" href="https://www.linkedin.com/in/foclemens/">
             {<AiFillLinkedin />} Fernando Clemens
           </a>
-          <a className="link" href="https://www.linkedin.com/in/ignaciobntz/">
+          <a className="link" href="https://github.com/ignacio2194/checkpoint-3-SF/tree/main">
           {<AiFillGithub />} Repositorio
           </a>
         </div>
