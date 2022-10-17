@@ -4,7 +4,7 @@ import '../styles/UserLogin.css'
 function UserLogin() {
   return (
     <div className="text-center">
-        <main className="form-signin w-100 m-auto">
+        <div className="form-signin w-100 m-auto">
             <form className='formContainer'>
                 <img className="mb-4" src="https://cdn-icons-png.flaticon.com/512/3711/3711310.png" alt="" width="72" height="72"/>
                 <h1 className="h3 mb-3 fw-normal text-light">Please sign in</h1>
@@ -25,7 +25,7 @@ function UserLogin() {
                 </div>
                 <button className="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
             </form>
-        </main> 
+        </div> 
     </div>
   )
 }
