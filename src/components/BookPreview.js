@@ -3,14 +3,10 @@ import { useSelector } from "react-redux"
 import { useNavigate } from 'react-router'
 import '../styles/BookPreview.css'
 
-
 function BookPreview() {
 
     const state = useSelector((state) => state)
     const books = useSelector((state) => state.book)
-    //console.log('state in Task', state);
-    console.log('books in book', books)
-    console.log('state in book', state)
     
     const navigate = useNavigate()
 
@@ -28,6 +24,7 @@ function BookPreview() {
               <h5 className='previewAuthor'>{book.author}</h5>
             </div>)
         })}
+     
     </div>
   )
 }
