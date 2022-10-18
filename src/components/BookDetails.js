@@ -23,7 +23,7 @@ function BookDetails() {
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
-      theme: "dark",
+      theme: "light",
     });
   };
   //Implement alert with messaje of action-confirmation like "Successfully deleted book!"
@@ -34,43 +34,26 @@ function BookDetails() {
   };
 
   return (
-    <div className="container">
-      <div className="bookDetailCard" key={book.ISBN}>
-        <img className="bookImg" alt="Book" src={book.imageLink} />
-        <div className="bookDetail">
-          <div className="bookDetailBody">
-            <h3 className="bookTitle">{book.title}</h3>
-            <h5 className="bookAuthor">{book.author}</h5>
-            <h5 className="bookAuthor">extract: {book.description}</h5>
-            <a
-              className="bookAuthor"
-              href={book.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              More info
-            </a>
-          </div>
-          <div className="bookDetailFooter">
-            <h5 className="pages">Pages: {book.pages}</h5>
-            <h5 className="country">Country: {book.country}</h5>
-            <h5 className="isbn">ISBN: {book.id}</h5>
-          </div>
-          <div className="buttonContainer">
-            <Link to={`/updatebook/${book.ISBN}`} className="btnUpdate">
-              Update
-            </Link>
-            <button
-              className="btnDelete"
-              onClick={() => deleteBookSelected(book.ISBN)}
-            >
-              Delete
-            </button>
-          </div>
+    <div className='container'>
+        <div className='bookDetailCard' key={book.ISBN}>
+            <img className='bookImg' alt='Book' src={book.imageLink}/>
+            <div className='bookDetail'>
+                <div className='bookDetailBody'>
+                    <h3 className='bookTitle'>{book.title}</h3>
+                    <h5 className='bookAuthor'>Author: {book.author}</h5>
+                    <h5 className='bookAuthor'>Extract: {book.description}</h5>
+                </div>
+                <div className='bookDetailFooter'>
+                    <h5 className='isbn'>ISBN: {book.ISBN}</h5>
+                </div>
+                <div className='buttonContainer'>
+                    <Link className='btnUpdate' to={`/updatebook/${book.ISBN}`} >Update</Link>
+                    <button className='btnDelete' onClick={() => deleteBookSelected(book.ISBN)}>Delete</button>
+                </div>  
+            </div>
         </div>
-      </div>
     </div>
-  );
+  )
 }
 
-export default BookDetails;
+export default BookDetails

@@ -5,7 +5,7 @@ import '../styles/BookPreview.css'
 
 function BookPreview() {
 
-    const state = useSelector((state) => state)
+    // const state = useSelector((state) => state)
     const books = useSelector((state) => state.book)
     
     const navigate = useNavigate()
