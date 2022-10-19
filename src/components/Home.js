@@ -9,24 +9,39 @@ function Home() {
     <Carousel className='m-5 position-relative'>
       <Carousel.Item className="block" interval={3000}>
         <img
-          className="col-lg-12 col-sm-12 col-12"
+          className="desk-img col-lg-12 col-sm-12 col-12"
           src="https://cdn.discordapp.com/attachments/783499342010777631/1030668480862748672/banner1.jpg"
           alt="Welcome Sign"
-        />     
+        />
+        <img
+          className="mobile-img col-lg-12 col-sm-12 col-12"
+          src="https://cdn.discordapp.com/attachments/783499342010777631/1032012354906492978/template1.png"
+          alt="Welcome Sign"
+        />    
       </Carousel.Item>
       <Carousel.Item className="block" interval={3000}>
         <img
-          className="col-lg-12 col-sm-12 col-12"
+          className="desk-img col-lg-12 col-sm-12 col-12"
           src="https://cdn.discordapp.com/attachments/783499342010777631/1030636690580193370/banner2.jpg"
+          alt="How to Use Our App"
+        />
+        <img
+          className="mobile-img col-lg-12 col-sm-12 col-12"
+          src="https://cdn.discordapp.com/attachments/783499342010777631/1032012355317551114/template2.png"
           alt="How to Use Our App"
         />   
       </Carousel.Item>
       <Carousel.Item className="block " interval={3000}>
         <img
-          className="col-lg-12 col-sm-12 col-12"
+          className="desk-img col-lg-12 col-sm-12 col-12"
           src="https://cdn.discordapp.com/attachments/783499342010777631/1030666186888851476/meetourteam.jpg"
           alt="Our Team"
-        />       
+        />
+        <img
+          className="mobile-img col-lg-12 col-sm-12 col-12"
+          src="https://cdn.discordapp.com/attachments/783499342010777631/1032012355619520612/template3c.png"
+          alt="Our Team"
+        />        
       </Carousel.Item>
     </Carousel>
     <div className='btns-home'>

@@ -13,6 +13,8 @@
 ##### - UUID
 ## Work organization tool (to do, timeline): 
 ##### - Trello | https://trello.com/b/ubuda8lL/library-app
+
+## Vercel - Deploy: https://libraryapp-skillfactory.vercel.app
 -------------------------------------------------------------------------------------
 
 ## //-----Getting Started with Create React App-----//
