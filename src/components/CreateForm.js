@@ -49,11 +49,9 @@ const CreateForm = () => {
   const books = useSelector((state) => state.book);
   const checkInputs = () => {
     const { title, author, description } = book;
+    console.log(book);
     if (
-      (title.length <= 1 && author.length <= 1 && description.length <= 1) ||
-      title === "" ||
-      author === "" ||
-      description === ""
+      (title.length <= 1 || author.length <= 1 || description.length <= 1)
     ) {
       setErrorButton(true);
     } else {
